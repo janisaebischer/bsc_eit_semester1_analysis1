@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 #Definiere h
-hvalue = 1e-12
+hvalue = 0.5
 minvalue = 0
 maxvalue = np.pi
 
@@ -9,6 +9,9 @@ maxvalue = np.pi
 #Funktion wird einmal definiert damit es simplere Aufrufe gibt
 def f(x):
     return np.cos(x)
+
+def f_prime(x):
+    return -np.sin(x)
 
 def g(x,h=hvalue):
     return (f(x+h)-f(x))/h
@@ -20,12 +23,14 @@ def Aufgabe3():
     # Definiert den Wertebereich der Funktion
     x = np.linspace(minvalue, maxvalue, 30000)
     y_f = f(x)
+    y_fprime = f_prime(x)
     y_g = g(x)
     y_h = h(x)
     # Figure + Achse
     fig, ax = plt.subplots()
     # Graph zeichnen
     ax.plot(x, y_f, color="blue", label=r"f(x) = cos(x)")
+    ax.plot(x, y_fprime, color="red", label=r"f'(x) = -sin(x)")
     ax.plot(x, y_g, color="green", label=r"$g(x) = \frac{(x + h) - x}{h}$")
     ax.plot(x, y_h, color="orange", label=r"$h(x) = \frac{\left(x + \frac{h}{2}\right) - \left(x - \frac{h}{2}\right)}{h}$")
     # 1. Zeile: Formel, größere Schrift

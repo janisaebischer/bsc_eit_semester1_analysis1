@@ -100,7 +100,7 @@ def Aufgabe2_linear_linear_3():
     )
     # Achsenbeschriftungen
     ax.set_xlabel(r"$\log_{10}(x)$")
-    ax.set_ylabel(r"$\log_{10}(3)+2*log_{10}(x)$")
+    ax.set_ylabel(r"$v = \log_{10}(y)$")
     # Gitterlinien für Plot
     ax.grid(True, which="major")
     ax.grid(True, which="minor",linewidth=0.5)

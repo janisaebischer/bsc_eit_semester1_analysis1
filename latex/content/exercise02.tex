@@ -1,0 +1,83 @@
+In der zweiten Übung geht es um die Darstellung von Graphen einer Kurve in unterschiedlichen Skalen. Dazu ploten wir jeweils die Funktion
+\begin{equation}
+    \label{eq:exercise02-function}
+    f(x) = 3x^2
+\end{equation}
+\noindent im Intervall $(0, 10]$. \num{0} wird hier absichtlich ausgeschlossen, da $\log_{10}(0)$ nicht definiert ist.
+
+%----------------  Linear - Linear   ---------------------------------------
+\subsection{Darstellung linear-linear}
+Als erstes wird die Funktion mit linear skalierter X- und Y-Achse dargestellt. Wie in Abbildung~\ref{fig:exercise02-linear-linear} ersichtlich, führt dies zu einer
+quadratischen Funktion.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{exercise02/exercise02-linear-linear.png}
+    \caption{Darstellung einer Funktion mit linearer X- und Y-Achse}
+    \label{fig:exercise02-linear-linear}
+\end{figure}
+
+%----------------  Log - Linear   ------------------------------------------
+\clearpage
+\subsection{Darstellung log-linear}
+\noindent In einem zweiten Schritt wird die Funktion mit logarithmisch skalierter X-Achse dargestellt. In Python kann dazu der Befehl \textit{semilogx()} verwendet werden.
+Dieser skaliert die X-Achse logarithmisch ($\log_{10}$), während er die Y-Achse linear belässt. Wie in Abbildung~\ref{fig:exercise02-log-linear-semilogx} ersichtlich, führt
+dies zu einer Exponentialfunktion.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{exercise02/exercise02-log-linear-semilogx.png}
+    \caption{Darstellung einer Funktion mit logarithmischer X- und linearer Y-Achse (Mit dem Befehl \textit{semilogx()})}
+    \label{fig:exercise02-log-linear-semilogx}
+\end{figure}
+
+\clearpage
+\noindent Die gleiche Kurve lässt sich auch durch \glqq manuelle\grqq~Skalierung der X-Achse erreichen, in dem wir
+\begin{equation*}
+    u = \log_{10}(x)
+\end{equation*}
+\noindent setzen und anschliessend auf der Horizontalachse u darstellen. Die Kurve wird dadurch zwar verschoben, es entsteht aber die gleiche Form einer Exponentialkurve
+wie mit \textit{semilogx()}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{exercise02/exercise02-log-linear-plot.png}
+    \caption{Darstellung einer Funktion mit logarithmischer X- und linearer Y-Achse (Mit dem Befehl \textit{plot()})}
+    \label{fig:exercise02-log-linear-plot}
+\end{figure}
+
+%----------------  Log - Log   ---------------------------------------------
+\clearpage
+\subsection{Darstellung log-log}
+Als letztes wird die Funktion mit logarithmisch skalierter X- und Y-Achse dargestellt. In Python kann dazu der Befehl \textit{loglog()} verwendet werden. Dieser
+skaliert beide Achsen logarithmisch ($\log_{10}$). Wie in Abbildung~\ref{fig:exercise02-log-log-loglog} ersichtlich, führt dies zu einer linearen Funktion.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{exercise02/exercise02-log-log-loglog.png}
+    \caption{Darstellung einer Funktion mit logarithmischer X- und Y-Achse (Mit dem Befehl loglog())}
+    \label{fig:exercise02-log-log-loglog}
+\end{figure}
+
+\clearpage
+\noindent Auch hier lässt sich die gleiche Kurve wieder durch \glqq manuelle\grqq~Skalierung der X- und Y-Achse erreichen, in dem wir
+\begin{equation*}
+    u = \log_{10}(x) \text{ und } v = \log_{10}(f(x)) = \log_{10}(y)
+\end{equation*}
+\noindent setzen. Anschliessend tragen wir u auf der horizontalen und v auf der vertikalen Achse auf. Dadurch entsteht ebenfalls eine lineare Funktion.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{exercise02/exercise02-log-log-plot.png}
+    \caption{Darstellung einer Funktion mit logarithmischer X- und Y-Achse (Mit dem Befehl plot())}
+    \label{fig:exercise02-log-log-plot}
+\end{figure}
+
+\noindent Durch Einsetzen und Umformen lässt sich die Funktion dieser Geraden bestimmen:
+\begin{align*}
+    v &= \log_{10}(f(x)) \\
+      &= \log_{10}(3x^2) \\
+      &= 2\log_{10}(x) + \log_{10}(3) \\
+      &= 2u + \log_{10}(3)
+\end{align*}
+\noindent Die Gerade hat also eine Steigung von $2u = 2\log_{10}(x)$ und einen Y-Achsenabschnitt bei $y = \log_{10}(3)$.

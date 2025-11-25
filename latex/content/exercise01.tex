@@ -1,0 +1,36 @@
+In der ersten Übung geht es um die Visualisierung des Grenzwerts folgender Funktion:
+\begin{equation}
+    \label{eq:exercise01-function}
+    f(x) = \frac{\sin{\frac{1}{x}}}{\frac{1}{x}} \quad\text{für } x > 0
+\end{equation}
+
+\noindent Wir wissen, dass 
+\begin{equation*}
+    \lim_{x \to \infty} \frac{\sin{\frac{1}{x}}}{\frac{1}{x}} = 1
+\end{equation*}
+\noindent Durch das ploten der Funktion~\ref{eq:exercise01-function} im Intervall $(0, 10]$ ist ersichtlich, dass die Funktion einen Grenzwert bei $y = 1$ hat.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{exercise01/exercise01.png}
+    \caption{Darstellung einer Funktion mit Grenzwert}
+    \label{fig:exercise01}
+\end{figure}
+
+\noindent Der Grenzwert lässt sich mathematisch wie folgt berechnen: \\
+Wir suchen
+\begin{equation*}
+    \lim_{x \to \infty} \frac{\sin{\frac{1}{x}}}{\frac{1}{x}}
+\end{equation*}
+\noindent Wir wissen, dass
+\begin{equation*}
+    \lim_{x \to \infty} \frac{1}{x} = 0
+\end{equation*}
+\noindent Durch ersetzen von $\frac{1}{x}\text{ durch }z$ erhalten wir
+\begin{equation*}
+    \lim_{z \to 0} \frac{\sin{z}}{z}
+\end{equation*}
+\noindent Dieses Limit ist uns bekannt, somit wissen wir, dass
+\begin{equation*}
+    \lim_{x \to \infty} \frac{\sin{\frac{1}{x}}}{\frac{1}{x}} = 1
+\end{equation*}
