@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 #Definiere h
-hvalue = 0.5
+hvalue = 0.001
 minvalue = 0
 maxvalue = np.pi
 
