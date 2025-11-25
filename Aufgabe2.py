@@ -5,7 +5,6 @@ import numpy as np
 #Funktion wird einmal definiert damit es simplere Aufrufe gibt
 def f(x):
     return 3*x**2
-#Funktion g(x) = 3*10**2*log10(x**2)
 minvalue = 1e-3
 
 #Funktion lineare Skala mit f(x)
@@ -18,7 +17,7 @@ def Aufgabe2_linear_linear_1():
     # Graph zeichnen
     ax.plot(x, y, color="blue", label=r"$f(x) = 3x^2$")
     # 1. Zeile: Formel, größere Schrift
-    ax.set_title(r"$f(x) = 3x^2$", fontsize=16, pad=20)
+    ax.set_title(r"Abbildung der Funktion $f(x) = 3x^2$", fontsize=16, pad=20)
     # 2. Zeile: kleinere Schrift, direkt unter der ersten
     ax.text(
         0.5, 1.02,
@@ -52,7 +51,7 @@ def Aufgabe2_linear_linear_2():
     # Graph zeichnen
     ax.plot(u, y, color="blue", label=r"$f(x) = 3x^2$")
     # 1. Zeile: Formel, größere Schrift
-    ax.set_title(r"$f(x) = 3x^2$", fontsize=16, pad=20)
+    ax.set_title(r"Abbildung der Funktion $f(x) = 3x^2$", fontsize=16, pad=20)
     # 2. Zeile: kleinere Schrift, direkt unter der ersten
     ax.text(
         0.5, 1.02,
@@ -88,7 +87,7 @@ def Aufgabe2_linear_linear_3():
     # Graph zeichnen
     ax.plot(u, v, color="blue", label=r"$f(x) = 3x^2$")
     # 1. Zeile: Formel, größere Schrift
-    ax.set_title(r"$f(x) = 3x^2$", fontsize=16, pad=20)
+    ax.set_title(r"Abbildung der Funktion $f(x) = 3x^2$", fontsize=16, pad=20)
     # 2. Zeile: kleinere Schrift, direkt unter der ersten
     ax.text(
         0.5, 1.02,
@@ -124,7 +123,7 @@ def Aufgabe2_log_linear():
     ax.set_xscale("log")
     ax.set_yscale("linear")
     # 1. Zeile: Formel, größere Schrift
-    ax.set_title(r"$f(x) = 3x^2$", fontsize=16, pad=20)
+    ax.set_title(r"Abbildung der Funktion $f(x) = 3x^2$", fontsize=16, pad=20)
     # 2. Zeile: kleinere Schrift, direkt unter der ersten
     ax.text(
         0.5, 1.02,
@@ -160,7 +159,7 @@ def Aufgabe2_log_log():
     ax.set_xscale("log")
     ax.set_yscale("log")
     # 1. Zeile: Formel, größere Schrift
-    ax.set_title(r"$f(x) = 3x^2$", fontsize=16, pad=20)
+    ax.set_title(r"Abbildung der Funktion $f(x) = 3x^2$", fontsize=16, pad=20)
     # 2. Zeile: kleinere Schrift, direkt unter der ersten
     ax.text(
         0.5, 1.02,
