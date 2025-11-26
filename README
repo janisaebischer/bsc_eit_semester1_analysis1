@@ -1,1 +1,8 @@
-##Hello
+## Venv aktivieren
+Um das Projekt auszuführen, wird eine Python-virtuelle Umgebung (`venv`) verwendet. 
+Je nach Konsole muss das venv unterschiedlich aktiviert werden.
+In pfad navigieren bis activate.
+
+## Abhängigkeiten installieren
+pip install -r requirements.txt
+

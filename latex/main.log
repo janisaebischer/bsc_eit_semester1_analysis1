@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.1)  25 NOV 2025 22:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.1)  26 NOV 2025 17:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1962,8 +1962,10 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'ngerman'.
-
-No file main.aux.
+ (./main.aux
+Package babel Info: 'ngerman' activates 'ngerman' shorthands.
+(babel)             Reported on input line 25.
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 122.
@@ -1982,7 +1984,7 @@ LaTeX Font Info:    Checking defaults for U/mathx/m/n on input line 122.
 LaTeX Font Info:    ... okay on input line 122.
 LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 122.
 LaTeX Font Info:    Trying to load font information for LY1+ptm on input line 122.
-(c:/texlive/2025/texmf-dist/tex/latex/ly1/ly1ptm.fd
+ (c:/texlive/2025/texmf-dist/tex/latex/ly1/ly1ptm.fd
 File: ly1ptm.fd 2001/02/01 font definitions for LY1/ptm using Berry names.
 )
 LaTeX Font Info:    ... okay on input line 122.
@@ -2028,8 +2030,6 @@ LaTeX Info: Command `\dddot' is already robust on input line 122.
 LaTeX Info: Command `\ddddot' is already robust on input line 122.
 \c@mv@tabular=\count606
 \c@mv@boldtabular=\count607
-Package babel Info: 'ngerman' activates 'ngerman' shorthands.
-(babel)             Reported on input line 122.
 LaTeX Info: Redefining \degres on input line 122.
 \c@lstlisting=\count608
 Package tocbasic Info: setting babel extension for `lol' on input line 122.
@@ -2093,11 +2093,11 @@ LaTeX Font Info:    Font shape `T1/Nunito-TOsF/b/n' will be
 (Font)              scaled to size 12.0pt on input line 138.
 
 
-<pictures/Bild1.png, id=8, 751.30687pt x 277.78781pt>
-File: pictures/Bild1.png Graphic file (type png)
-<use pictures/Bild1.png>
-Package pdftex.def Info: pictures/Bild1.png  used on input line 138.
-(pdftex.def)             Requested size: 751.30502pt x 277.78711pt.
+<pictures/Bild2.png, id=8, 1027.84pt x 1027.84pt>
+File: pictures/Bild2.png Graphic file (type png)
+<use pictures/Bild2.png>
+Package pdftex.def Info: pictures/Bild2.png  used on input line 138.
+(pdftex.def)             Requested size: 1027.8375pt x 1027.8375pt.
 LaTeX Font Info:    External font `cmex7' loaded for size
 (Font)              <6> on input line 138.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 138.
@@ -2112,11 +2112,10 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout6 = `main.ist'.
 
 
- <./pictures/Bild1.png> <./pictures/bfh-logo.pdf>]
+ <./pictures/Bild2.png (PNG copy)> <./pictures/bfh-logo.pdf>]
 LaTeX Font Info:    Font shape `T1/Nunito-TOsF/b/n' will be
 (Font)              scaled to size 14.4pt on input line 141.
-
-No file main.toc.
+ (./main.toc)
 \tf@toc=\write10
 \openout10 = `main.toc'.
 
@@ -2144,293 +2143,144 @@ LaTeX Font Info:    Font shape `T1/SourceSerifPro-LF/m/n' will be
 (Font)              scaled to size 8.0pt on input line 4.
 LaTeX Font Info:    Font shape `T1/SourceSerifPro-LF/m/n' will be
 (Font)              scaled to size 6.0pt on input line 4.
-LaTeX Font Info:    Font shape `T1/SourceSerifPro-LF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 11.
-
-
-LaTeX Warning: Reference `eq:exercise01-function' on page 1 undefined on input line 11.
-
-
-LaTeX Warning: File `exercise01/exercise01.png' not found on input line 15.
-
-
-! Package pdftex.def Error: File `exercise01/exercise01.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.15 ...th=1\textwidth]{exercise01/exercise01.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+<pictures/exercise01/aufgabe1.png, id=42, 421.21365pt x 330.9966pt>
+File: pictures/exercise01/aufgabe1.png Graphic file (type png)
+<use pictures/exercise01/aufgabe1.png>
+Package pdftex.def Info: pictures/exercise01/aufgabe1.png  used on input line 24.
+(pdftex.def)             Requested size: 418.25555pt x 328.68764pt.
 
 
 [1
 
 
-]
+])
 
-[2{c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}])
+[2 <./pictures/exercise01/aufgabe1.png>] (./content/exercise02.tex
+Overfull \hbox (4.07355pt too wide) in paragraph at lines 5--8
+\T1/SourceSerifPro-LF/m/n/10.95 In ver-schie-de-nen Ska-len dar-stel-len. Das In-ter-vall in der Auf-ga-ben-stel-lung wird als $\U/matha/m/n/10.95 r\OT1/cmr/m/n/10.95 0\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 10\U/matha/m/n/10.95 s$
+ []
 
-[3] (./content/exercise02.tex
+<pictures/exercise02/aufgabe2_linear_linear_1.png, id=67, 419.166pt x 346.896pt>
+File: pictures/exercise02/aufgabe2_linear_linear_1.png Graphic file (type png)
+<use pictures/exercise02/aufgabe2_linear_linear_1.png>
+Package pdftex.def Info: pictures/exercise02/aufgabe2_linear_linear_1.png  used on input line 16.
+(pdftex.def)             Requested size: 418.25555pt x 346.14879pt.
 
-LaTeX Warning: Reference `fig:exercise02-linear-linear' on page 4 undefined on input line 10.
 
+[3
 
-LaTeX Warning: File `exercise02/exercise02-linear-linear.png' not found on input line 15.
-
-
-! Package pdftex.def Error: File `exercise02/exercise02-linear-linear.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.15 ...]{exercise02/exercise02-linear-linear.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+ <./pictures/exercise02/aufgabe2_linear_linear_1.png>]
+<pictures/exercise02/aufgabe2_logarithmisch_linear.png, id=77, 421.3341pt x 346.896pt>
+File: pictures/exercise02/aufgabe2_logarithmisch_linear.png Graphic file (type png)
+<use pictures/exercise02/aufgabe2_logarithmisch_linear.png>
+Package pdftex.def Info: pictures/exercise02/aufgabe2_logarithmisch_linear.png  used on input line 30.
+(pdftex.def)             Requested size: 418.25555pt x 344.37556pt.
 
 
 [4
 
-]
-
-[5]
-LaTeX Font Info:    Font shape `T1/SourceSerifPro-LF/m/it' will be
-(Font)              scaled to size 10.95pt on input line 23.
-
-
-LaTeX Warning: Reference `fig:exercise02-log-linear-semilogx' on page 6 undefined on input line 24.
+ <./pictures/exercise02/aufgabe2_logarithmisch_linear.png>]
+<pictures/exercise02/aufgabe2_linear_linear_2.png, id=87, 420.8523pt x 347.3778pt>
+File: pictures/exercise02/aufgabe2_linear_linear_2.png Graphic file (type png)
+<use pictures/exercise02/aufgabe2_linear_linear_2.png>
+Package pdftex.def Info: pictures/exercise02/aufgabe2_linear_linear_2.png  used on input line 46.
+(pdftex.def)             Requested size: 418.25555pt x 345.23552pt.
 
 
-LaTeX Warning: File `exercise02/exercise02-log-linear-semilogx.png' not found on input line 29.
+[5
 
-
-! Package pdftex.def Error: File `exercise02/exercise02-log-linear-semilogx.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.29 ...cise02/exercise02-log-linear-semilogx.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-LaTeX Font Info:    Font shape `T1/Nunito-TOsF/m/it' will be
-(Font)              scaled to size 9.0pt on input line 30.
+ <./pictures/exercise02/aufgabe2_linear_linear_2.png>]
+<pictures/exercise02/aufgabe2_logarithmisch_logarithmisch.png, id=100, 425.1885pt x 346.896pt>
+File: pictures/exercise02/aufgabe2_logarithmisch_logarithmisch.png Graphic file (type png)
+<use pictures/exercise02/aufgabe2_logarithmisch_logarithmisch.png>
+Package pdftex.def Info: pictures/exercise02/aufgabe2_logarithmisch_logarithmisch.png  used on input line 61.
+(pdftex.def)             Requested size: 418.25555pt x 341.26317pt.
 
 
 [6
 
-{c:/texlive/2025/texmf-dist/fonts/enc/dvips/sourceserifpro/a_5mjl2d.enc}]
-
-LaTeX Warning: File `exercise02/exercise02-log-linear-plot.png' not found on input line 44.
-
-
-! Package pdftex.def Error: File `exercise02/exercise02-log-linear-plot.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 ...exercise02/exercise02-log-linear-plot.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
+ <./pictures/exercise02/aufgabe2_logarithmisch_logarithmisch.png>]
+<pictures/exercise02/aufgabe2_linear_linear_3.png, id=109, 416.87746pt x 347.3778pt>
+File: pictures/exercise02/aufgabe2_linear_linear_3.png Graphic file (type png)
+<use pictures/exercise02/aufgabe2_linear_linear_3.png>
+Package pdftex.def Info: pictures/exercise02/aufgabe2_linear_linear_3.png  used on input line 76.
+(pdftex.def)             Requested size: 418.25555pt x 348.52716pt.
+)
 
 [7
 
-]
-
-LaTeX Warning: Reference `fig:exercise02-log-log-loglog' on page 8 undefined on input line 53.
-
-
-LaTeX Warning: File `exercise02/exercise02-log-log-loglog.png' not found on input line 57.
-
-
-! Package pdftex.def Error: File `exercise02/exercise02-log-log-loglog.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.57 ...{exercise02/exercise02-log-log-loglog.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+ <./pictures/exercise02/aufgabe2_linear_linear_3.png>] (./content/exercise03.tex
+<pictures/exercise03/aufgabe3_3.png, id=120, 424.4658pt x 344.60745pt>
+File: pictures/exercise03/aufgabe3_3.png Graphic file (type png)
+<use pictures/exercise03/aufgabe3_3.png>
+Package pdftex.def Info: pictures/exercise03/aufgabe3_3.png  used on input line 34.
+(pdftex.def)             Requested size: 334.60571pt x 271.669pt.
 
 
 [8
 
 ]
-
-LaTeX Warning: File `exercise02/exercise02-log-log-plot.png' not found on input line 71.
-
-
-! Package pdftex.def Error: File `exercise02/exercise02-log-log-plot.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.71 ...h]{exercise02/exercise02-log-log-plot.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+<pictures/exercise03/aufgabe3_1.png, id=137, 424.4658pt x 344.60745pt>
+File: pictures/exercise03/aufgabe3_1.png Graphic file (type png)
+<use pictures/exercise03/aufgabe3_1.png>
+Package pdftex.def Info: pictures/exercise03/aufgabe3_1.png  used on input line 41.
+(pdftex.def)             Requested size: 334.60571pt x 271.669pt.
 
 
-
-[9
-
-])
-
-[10] (./content/exercise03.tex
-
-LaTeX Warning: File `exercise03/exercise03-1.png' not found on input line 25.
+[9 <./pictures/exercise03/aufgabe3_3.png>]
+<pictures/exercise03/aufgabe3_05.png, id=145, 424.4658pt x 344.60745pt>
+File: pictures/exercise03/aufgabe3_05.png Graphic file (type png)
+<use pictures/exercise03/aufgabe3_05.png>
+Package pdftex.def Info: pictures/exercise03/aufgabe3_05.png  used on input line 48.
+(pdftex.def)             Requested size: 334.60571pt x 271.669pt.
 
 
-! Package pdftex.def Error: File `exercise03/exercise03-1.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.25 ....8\textwidth]{exercise03/exercise03-1.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-
-[11
-
-]
-
-LaTeX Warning: File `exercise03/exercise03-2.png' not found on input line 32.
-
-
-! Package pdftex.def Error: File `exercise03/exercise03-2.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.32 ....8\textwidth]{exercise03/exercise03-2.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-
-[12]
-
-LaTeX Warning: File `exercise03/exercise03-3.png' not found on input line 39.
-
-
-! Package pdftex.def Error: File `exercise03/exercise03-3.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.39 ....8\textwidth]{exercise03/exercise03-3.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-
-[13]
-
-LaTeX Warning: File `exercise03/exercise03-4.png' not found on input line 46.
-
-
-! Package pdftex.def Error: File `exercise03/exercise03-4.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.46 ....8\textwidth]{exercise03/exercise03-4.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-
-[14]
-
-LaTeX Warning: File `exercise03/exercise03-5.png' not found on input line 53.
-
-
-! Package pdftex.def Error: File `exercise03/exercise03-5.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.53 ....8\textwidth]{exercise03/exercise03-5.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+[10 <./pictures/exercise03/aufgabe3_1.png>]
+<pictures/exercise03/aufgabe3_0001.png, id=154, 424.4658pt x 344.60745pt>
+File: pictures/exercise03/aufgabe3_0001.png Graphic file (type png)
+<use pictures/exercise03/aufgabe3_0001.png>
+Package pdftex.def Info: pictures/exercise03/aufgabe3_0001.png  used on input line 55.
+(pdftex.def)             Requested size: 334.60571pt x 271.669pt.
 )
 
-[15]
+[11 <./pictures/exercise03/aufgabe3_05.png>]
 
-[16]
-
-LaTeX Warning: Empty bibliography on input line 172.
-
-(./main.gls) (./main.acr)
-
-[17
+[12 <./pictures/exercise03/aufgabe3_0001.png>] (./main.lof)
+\tf@lof=\write11
+\openout11 = `main.lof'.
 
 
-]
-No file main.ind.
-(./main.aux)
+
+Package glossaries Warning: No \printglossary or \printglossaries found. 
+(Remove \makeglossaries if you don't want any glossaries.) 
+This document will not have a glossary.
+
+
+
+[13
+
+] (./main.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                main
-(biblatex)                and rerun LaTeX afterwards.
-
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 73116 strings out of 467748
- 1724103 string characters out of 5431138
- 2958325 words of memory out of 5000000
- 100689 multiletter control sequences out of 15000+600000
- 893420 words of font info for 109 fonts, out of 8000000 for 9000
+ 72903 strings out of 467748
+ 1714761 string characters out of 5431138
+ 2961864 words of memory out of 5000000
+ 100472 multiletter control sequences out of 15000+600000
+ 831668 words of font info for 102 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  128i,24n,136p,11299b,2489s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2025/texmf-dist/fonts/type1/public/nunito/Nunito-Bold.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/nunito/Nunito-Italic.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/nunito/Nunito-Regular.pfb><c:/texlive/2025/texmf-dist/fonts/type1/adobe/sourceserifpro/SourceSerifPro-Bold.pfb><c:/texlive/2025/texmf-dist/fonts/type1/adobe/sourceserifpro/SourceSerifPro-It.pfb><c:/texlive/2025/texmf-dist/fonts/type1/adobe/sourceserifpro/SourceSerifPro-Regular.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/mathabx-type1/matha10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/mathabx-type1/matha8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/mathabx-type1/mathb10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on main.pdf (19 pages, 1040191 bytes).
+<c:/texlive/2025/texmf-dist/fonts/type1/public/nunito/Nunito-Bold.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/nunito/Nunito-Regular.pfb><c:/texlive/2025/texmf-dist/fonts/type1/adobe/sourceserifpro/SourceSerifPro-Regular.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/mathabx-type1/matha10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/mathabx-type1/matha8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/mathabx-type1/mathb10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/mathabx-type1/mathx10.pfb>
+Output written on main.pdf (15 pages, 4561774 bytes).
 PDF statistics:
- 226 PDF objects out of 1000 (max. 8388607)
- 172 compressed objects within 2 object streams
- 41 named destinations out of 1000 (max. 500000)
- 79 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 278 PDF objects out of 1000 (max. 8388607)
+ 214 compressed objects within 3 object streams
+ 53 named destinations out of 1000 (max. 500000)
+ 129 words of extra memory for PDF output out of 10000 (max. 10000000)
 

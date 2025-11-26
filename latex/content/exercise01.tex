@@ -1,36 +1,31 @@
-In der ersten Übung geht es um die Visualisierung des Grenzwerts folgender Funktion:
+In der 1. Übung soll man die Funktion:
 \begin{equation}
     \label{eq:exercise01-function}
     f(x) = \frac{\sin{\frac{1}{x}}}{\frac{1}{x}} \quad\text{für } x > 0
 \end{equation}
-
-\noindent Wir wissen, dass 
-\begin{equation*}
+\noindent in einem Graphen darstellen. Alle wichtigen Parameter dieser Funktion sollen ersichtlich sein.
+Aus dem Unterricht haben wir gelernt, dass die Funktion:
+\begin{equation}
+    \label{eq:exercise01-standard_x/x}
+    \lim_{x \to 0} \frac{\sin{x}}{x} = 1
+\end{equation}
+\noindent gegen den Grenzwert 1 konvergiert. In der Aufgabenstellung ist jedoch eine andere Funktion gegeben.
+Diese Funktion kann auch so etwas anders geschrieben werden.
+\begin{equation}
+    \label{eq:exercise01-standard_(1/x)/(1/x)}
     \lim_{x \to \infty} \frac{\sin{\frac{1}{x}}}{\frac{1}{x}} = 1
-\end{equation*}
-\noindent Durch das ploten der Funktion~\ref{eq:exercise01-function} im Intervall $(0, 10]$ ist ersichtlich, dass die Funktion einen Grenzwert bei $y = 1$ hat.
+\end{equation}
+\noindent Aus den gewonnenen Erkenntnissen aus dem Unterricht kann der Grenzwert für die gefragte Funtion~\ref{eq:exercise01-function} berechnet werden.
+Da wir wissen, dass der Bruch $1/x, x \to \infty$ extrem klein wird haben wir ein Verhalten des Grenzwerts wie in Funktion~\ref{eq:exercise01-standard_x/x}
+ploten wir die verlangte Funtion~\ref{eq:exercise01-function} erhalten wir folgenden Plot: im Intervall $(0, 5]$ ist ersichtlich, dass die Funktion einen Grenzwert bei $y = 1$ hat.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{exercise01/exercise01.png}
-    \caption{Darstellung einer Funktion mit Grenzwert}
+    \includegraphics[width=1\textwidth]{exercise01/aufgabe1.png}
+    \caption{Plot der Funktion~\ref{eq:exercise01-function}}
     \label{fig:exercise01}
 \end{figure}
 
-\noindent Der Grenzwert lässt sich mathematisch wie folgt berechnen: \\
-Wir suchen
-\begin{equation*}
-    \lim_{x \to \infty} \frac{\sin{\frac{1}{x}}}{\frac{1}{x}}
-\end{equation*}
-\noindent Wir wissen, dass
-\begin{equation*}
-    \lim_{x \to \infty} \frac{1}{x} = 0
-\end{equation*}
-\noindent Durch ersetzen von $\frac{1}{x}\text{ durch }z$ erhalten wir
-\begin{equation*}
-    \lim_{z \to 0} \frac{\sin{z}}{z}
-\end{equation*}
-\noindent Dieses Limit ist uns bekannt, somit wissen wir, dass
-\begin{equation*}
-    \lim_{x \to \infty} \frac{\sin{\frac{1}{x}}}{\frac{1}{x}} = 1
-\end{equation*}
+\noindent Zu sehen ist, wie die Funktion gegen 1 konvergiert. Für eine bessere Sichtbarkeit des Grenzwerts, ist eine gestrichelte Asymptote eingezeichnet.
+Um den Grenzwert sichtbar und möglichst viel von der Funktion zu zeigen wurde ein Intervall von $(0, 5]$ gewählt. Wichtig! Die Funktion darf nicht durch $0$ geteilt werden.
+Dies kann auch so aus der Funktion~\ref{eq:exercise01-function} entnommen werden.

@@ -1,9 +1,14 @@
 \babel@toc {ngerman}{}\relax 
 \contentsline {section}{\numberline {1}Beispiel eines Grenzwerts}{1}{section.1}%
-\contentsline {section}{\numberline {2}Logarithmische Skala}{4}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Darstellung linear-linear}{4}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Darstellung log-linear}{6}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Darstellung log-log}{8}{subsection.2.3}%
-\contentsline {section}{\numberline {3}Ableitung}{11}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Annäherung der Ableitung von cos(x)}{11}{subsection.3.1}%
+\contentsline {section}{\numberline {2}Logarithmische Skala}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Darstellung des Plots (X-Achse: linear, Y-Achse: linear)}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Darstellung des Plots (X-Achse: logarithmisch, Y-Achse: linear)}{4}{subsection.2.2}%
+\contentsline {paragraph}{\nonumberline "Manuelle" Methode}{5}{paragraph*.6}%
+\contentsline {subsection}{\numberline {2.3}Darstellung des Plots (X-Achse: logarithmisch, Y-Achse: logarithmisch)}{6}{subsection.2.3}%
+\contentsline {paragraph}{\nonumberline "Manuelle" Methode}{7}{paragraph*.10}%
+\contentsline {section}{\numberline {3}Ableitung}{8}{section.3}%
+\contentsline {paragraph}{\nonumberline Vorwärtsdifferenz.}{8}{paragraph*.13}%
+\contentsline {paragraph}{\nonumberline Zentrale Differenz.}{8}{paragraph*.15}%
+\contentsline {paragraph}{\nonumberline Vergleich der Methoden.}{8}{paragraph*.17}%
+\contentsline {section}{\nonumberline Abbildungsverzeichnis}{13}{section*.22}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

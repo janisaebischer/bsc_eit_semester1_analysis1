@@ -1,56 +1,58 @@
-In Übung 3 geht es um die Annäherung der Ableitung. Die Ableitung ist im Allgemeinen wie folgt bestimmt:
-\begin{equation*}
-    f'(x) = \lim_{h \to 0} \frac{f(x + h) - f(x)}{h}
-\end{equation*}
-\noindent Mit dieser Formel nähert man sich dem Punkt der Ableitung von nur einer Seite an. Man rechnet also die Steigung der Funktion zwischen dem Punkt, an welchem
-man die Ableitung ermitteln möchte und einem zweiten Punkt, welcher um $h$ verschoben ist. Wenn man sich dem genauen Wert der Ableitung an einem Punkt noch schneller
-nähern will, kann man folgende Formel verwenden:
-\begin{equation*}
-    f'(x) = \lim_{h \to 0} \frac{f(x + \frac{h}{2}) - f(x - \frac{h}{2})}{h}
-\end{equation*}
-\noindent Hiermit rechnet man also die Steigung zwischen zwei Punkten, welche einmal $\frac{h}{2}$ vor dem Punkt der zu ermittelnden Ableitung um einmal $\frac{h}{2}$
-dahinter liegen. Da man sich mit dieser Formel der genauen Steigung an einem Punkt \glqq von beiden Seiten\grqq~nähert, erhält man für das gleiche h ein genaueres
-Resultat.
+In der 3. Übung soll gezeigt werden wie die Funktion:
+\begin{equation}
+    \label{eq:exercise03-function}
+    f(x) = \cos(x)
+\end{equation}
+im Intervall $(0,\pi)$ numerisch approximiert wird. Die exakte Ableitung der Funktion~\ref{eq:exercise03-function} ist bekannt:
+\begin{equation}
+    \label{eq:exercise03-prime}
+    f'(x) = -\sin(x).
+\end{equation}
+Um diese Ableitung mit dem Computer zu berechnen, verwenden wir Differenzenquotienten, die den Grenzwert aus der Ableitungsdefinition näherungsweise ersetzen.
 
-%----------------  Derivation with different h   ---------------------------
-\subsection{Annäherung der Ableitung von cos(x)}
-Um dies an einem praktischen Beispiel zu untersuchen, versuchen wir die Ableitung von $\sin{x}$ durch die oben genannten Formeln zu bestimmen. Die korrekte Ableitung von
-ist wie folgt:
-\begin{equation*}
-    \sin'{x} = \cos{x}
-\end{equation*}
-Um den Unterschied und die Funktion der beiden Varianten der Annäherung zur Ableitung 
+\paragraph{Vorwärtsdifferenz.}
+Die erste Methode ist der sogenannte Vorwärtsdifferenzenquotient
+\begin{equation}
+    g(x) = \frac{f(x+h) - f(x)}{h}.
+\end{equation}
+Dabei wird die Steigung der Sekante durch die beiden Punkte $(x, f(x))$ und $(x+h, f(x+h))$ verwendet, um sich der Tangentensteigung $f'(x)$ zu nähern. 
+Für kleinere Werte von $h$ liegen die beiden Punkte näher beieinander, und die Sekante nähert sich der Tangente an.
+
+\paragraph{Zentrale Differenz.}
+Die zweite Methode ist der zentrale Differenzenquotient
+\begin{equation}
+    h(x) = \frac{f\!\left(x+\frac{h}{2}\right) - f\!\left(x-\frac{h}{2}\right)}{h}.
+\end{equation}
+Hier werden zwei Punkte symmetrisch um $x$ betrachtet, nämlich $x-\frac{h}{2}$ und $x+\frac{h}{2}$. Die Sekante durch diese beiden Punkte schneidet die Kurve 
+„links und rechts“ von $x$ und liefert dadurch in vielen Fällen eine bessere Annäherung an die Tangente.
+
+\paragraph{Vergleich der Methoden.}
+Damit der Unterschied zwischen den beiden Methoden ersichtlicher wird, ist alles in einem Plot zusammengeführt. Die jeweilig benutzten h-Werte sind im Plot aufgeführt.
+
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{exercise03/exercise03-1.png}
-    \caption{Annäherung der Ableitung einer Funktion - Schritt 1: h = 0.8}
+    \includegraphics[width=0.8\textwidth]{exercise03/aufgabe3_3.png}
+    \caption{Annäherung der Ableitung der Funktion~\ref{eq:exercise03-function} mit h=3}
     \label{fig:exercise03-1}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{exercise03/exercise03-2.png}
-    \caption{Annäherung der Ableitung einer Funktion - Schritt 2: h = 0.4}
+    \includegraphics[width=0.8\textwidth]{exercise03/aufgabe3_1.png}
+    \caption{Annäherung der Ableitung der Funktion~\ref{eq:exercise03-function} mit h=1}
     \label{fig:exercise03-2}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{exercise03/exercise03-3.png}
-    \caption{Annäherung der Ableitung einer Funktion - Schritt 3: h = 0.2}
+    \includegraphics[width=0.8\textwidth]{exercise03/aufgabe3_05.png}
+    \caption{Annäherung der Ableitung der Funktion~\ref{eq:exercise03-function} mit h=0.5}
     \label{fig:exercise03-3}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{exercise03/exercise03-4.png}
-    \caption{Annäherung der Ableitung einer Funktion - Schritt 4: h = 0.1}
+    \includegraphics[width=0.8\textwidth]{exercise03/aufgabe3_0001.png}
+    \caption{Annäherung der Ableitung der Funktion~\ref{eq:exercise03-function} mit h=0.001}
     \label{fig:exercise03-4}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{exercise03/exercise03-5.png}
-    \caption{Annäherung der Ableitung einer Funktion - Schritt 5: h = 0.01}
-    \label{fig:exercise03-5}
 \end{figure}

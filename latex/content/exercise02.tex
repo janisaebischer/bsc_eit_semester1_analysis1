@@ -1,83 +1,79 @@
-In der zweiten Übung geht es um die Darstellung von Graphen einer Kurve in unterschiedlichen Skalen. Dazu ploten wir jeweils die Funktion
+In der 2. Übung soll man die Funktion:
 \begin{equation}
     \label{eq:exercise02-function}
     f(x) = 3x^2
 \end{equation}
-\noindent im Intervall $(0, 10]$. \num{0} wird hier absichtlich ausgeschlossen, da $\log_{10}(0)$ nicht definiert ist.
+\noindent In verschiedenen Skalen darstellen. Das Intervall in der Aufgabenstellung wird als $[0, 10]$ angegeben. Da jedoch mit $\log_{10}(x)$ gerechnet wird und 
+$\log_{10}(0)$ nicht definiert ist, wird das Intervall auf $(0, 10]$ festgelegt. 
 
 %----------------  Linear - Linear   ---------------------------------------
-\subsection{Darstellung linear-linear}
-Als erstes wird die Funktion mit linear skalierter X- und Y-Achse dargestellt. Wie in Abbildung~\ref{fig:exercise02-linear-linear} ersichtlich, führt dies zu einer
-quadratischen Funktion.
+\subsection{Darstellung des Plots (X-Achse: linear, Y-Achse: linear)}
+Als erstes wird die Funktion ganz üblich in der linearen Skala dargestellt. Da die Funktion~\ref{eq:exercise02-function} quadratisch ist, ist im Plot
+auch das bekannte Verhalten einer quadratischen Funktion zu sehen. Es ist eine Parabel zu sehen. Wegen dem gewählten Intervall jedoch nur im positiven Spektrum.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{exercise02/exercise02-linear-linear.png}
-    \caption{Darstellung einer Funktion mit linearer X- und Y-Achse}
+    \includegraphics[width=1\textwidth]{exercise02/aufgabe2_linear_linear_1.png}
+    \caption{Plot der Funktion~\ref{eq:exercise02-function} in linearer Skala}
     \label{fig:exercise02-linear-linear}
 \end{figure}
 
 %----------------  Log - Linear   ------------------------------------------
 \clearpage
-\subsection{Darstellung log-linear}
-\noindent In einem zweiten Schritt wird die Funktion mit logarithmisch skalierter X-Achse dargestellt. In Python kann dazu der Befehl \textit{semilogx()} verwendet werden.
-Dieser skaliert die X-Achse logarithmisch ($\log_{10}$), während er die Y-Achse linear belässt. Wie in Abbildung~\ref{fig:exercise02-log-linear-semilogx} ersichtlich, führt
-dies zu einer Exponentialfunktion.
+\subsection{Darstellung des Plots (X-Achse: logarithmisch, Y-Achse: linear)}
+\noindent Die zweite Skala in welcher die Funktion~\ref{eq:exercise02-function} dargestellt werden soll ist die sogenannte semilog Skala.
+Eine Achse ist logarithmisch, die vorher quadratische Funktion, sieht jetzt wie eine Exponentialfunktion aus. Es gibt zwei Varianten wie diese Skala erzeugt werden kann.
+Die "manuelle" Variante ist das ändern der Skala im Pythonscript. Nach dem umstellen der Skala erhalten wir folgenden Graphen:
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{exercise02/exercise02-log-linear-semilogx.png}
-    \caption{Darstellung einer Funktion mit logarithmischer X- und linearer Y-Achse (Mit dem Befehl \textit{semilogx()})}
-    \label{fig:exercise02-log-linear-semilogx}
+    \includegraphics[width=1\textwidth]{exercise02/aufgabe2_logarithmisch_linear.png}
+    \caption{Plot der Funktion~\ref{eq:exercise02-function} in semilog Skala, Python}
+    \label{fig:exercise02-semilog-python}
 \end{figure}
 
 \clearpage
-\noindent Die gleiche Kurve lässt sich auch durch \glqq manuelle\grqq~Skalierung der X-Achse erreichen, in dem wir
-\begin{equation*}
+\paragraph{"Manuelle" Methode} Der gleiche Plot lässt sich auch noch anders realisieren. Dazu wird die gewünschte Achse, in diesem Fall die X-Achse, logarithmisch skaliert.
+Die X-Achse wird dazu gleich~\ref{eq:exercise02-u} gesetzt. Die Kurve ist dadurch nicht mehr an gleicher Position wie vorher, die Form jedoch ist die gleiche wie
+in Abbildung~\ref{fig:exercise02-semilog-python}.
+\begin{equation}
+    \label{eq:exercise02-u}
     u = \log_{10}(x)
-\end{equation*}
-\noindent setzen und anschliessend auf der Horizontalachse u darstellen. Die Kurve wird dadurch zwar verschoben, es entsteht aber die gleiche Form einer Exponentialkurve
-wie mit \textit{semilogx()}.
+\end{equation}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{exercise02/exercise02-log-linear-plot.png}
-    \caption{Darstellung einer Funktion mit logarithmischer X- und linearer Y-Achse (Mit dem Befehl \textit{plot()})}
-    \label{fig:exercise02-log-linear-plot}
+    \includegraphics[width=1\textwidth]{exercise02/aufgabe2_linear_linear_2.png}
+    \caption{Plot der Funktion~\ref{eq:exercise02-function} in semilog Skala, u-Methode}
+    \label{fig:exercise02-semilog-u-method}
 \end{figure}
 
 %----------------  Log - Log   ---------------------------------------------
 \clearpage
-\subsection{Darstellung log-log}
-Als letztes wird die Funktion mit logarithmisch skalierter X- und Y-Achse dargestellt. In Python kann dazu der Befehl \textit{loglog()} verwendet werden. Dieser
-skaliert beide Achsen logarithmisch ($\log_{10}$). Wie in Abbildung~\ref{fig:exercise02-log-log-loglog} ersichtlich, führt dies zu einer linearen Funktion.
+\subsection{Darstellung des Plots (X-Achse: logarithmisch, Y-Achse: logarithmisch)}
+Die dritte Skala in welcher die Funktion~\ref{eq:exercise02-function} dargestellt werden soll ist die logarithmische Skala.
+Beide Achsen sind logarithmisch. In der u-v-Darstellung wird die Kurve zu einer Gerade; die Steigung entspricht dem Exponenten 2 und der Achsenabschnitt dem $\log_{10}(3)$.
+Es gibt zwei Varianten wie diese Skala erzeugt werden kann. Die "manuelle" Variante ist das ändern der Skala im Pythonscript. 
+Nach dem umstellen der Skala erhalten wir folgenden Graphen:
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{exercise02/exercise02-log-log-loglog.png}
-    \caption{Darstellung einer Funktion mit logarithmischer X- und Y-Achse (Mit dem Befehl loglog())}
-    \label{fig:exercise02-log-log-loglog}
+    \includegraphics[width=1\textwidth]{exercise02/aufgabe2_logarithmisch_logarithmisch.png}
+    \caption{Plot der Funktion~\ref{eq:exercise02-function} in logarithmischer Skala, Python}
+    \label{fig:exercise02-log-python}
 \end{figure}
 
 \clearpage
-\noindent Auch hier lässt sich die gleiche Kurve wieder durch \glqq manuelle\grqq~Skalierung der X- und Y-Achse erreichen, in dem wir
+\paragraph{"Manuelle" Methode} Wie schon im vorherigen Kapitel gesehen, kann auch dies wieder "manuell" über Umrechnung der Skala geschehen. Dafür berechnen wir zusätzlich das $v$.
+$u$ und $v$ können anschliessend als Achsen eingetragen werden. Auch hier ist die Skala nicht die selbe wie in ~\ref{fig:exercise02-log-python}, die Form der Kurve
+ist jedoch äquivalent.
 \begin{equation*}
     u = \log_{10}(x) \text{ und } v = \log_{10}(f(x)) = \log_{10}(y)
 \end{equation*}
-\noindent setzen. Anschliessend tragen wir u auf der horizontalen und v auf der vertikalen Achse auf. Dadurch entsteht ebenfalls eine lineare Funktion.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{exercise02/exercise02-log-log-plot.png}
-    \caption{Darstellung einer Funktion mit logarithmischer X- und Y-Achse (Mit dem Befehl plot())}
-    \label{fig:exercise02-log-log-plot}
+    \includegraphics[width=1\textwidth]{exercise02/aufgabe2_linear_linear_3.png}
+    \caption{Plot der Funktion~\ref{eq:exercise02-function} in logarithmischer Skala, u-v-Methode}
+    \label{fig:exercise02-log-u-v-method}
 \end{figure}
-
-\noindent Durch Einsetzen und Umformen lässt sich die Funktion dieser Geraden bestimmen:
-\begin{align*}
-    v &= \log_{10}(f(x)) \\
-      &= \log_{10}(3x^2) \\
-      &= 2\log_{10}(x) + \log_{10}(3) \\
-      &= 2u + \log_{10}(3)
-\end{align*}
-\noindent Die Gerade hat also eine Steigung von $2u = 2\log_{10}(x)$ und einen Y-Achsenabschnitt bei $y = \log_{10}(3)$.
