@@ -1,0 +1,18 @@
+\babel@toc {ngerman}{}\relax 
+\contentsline {section}{\numberline {1}Problem 1 – Leistung an einem Lastwiderstand}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Reale Spannungsquelle mit Lastwiderstand}{1}{subsection.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.1}Leistung am Lastwiderstand}{1}{subsubsection.1.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.2}Maximale Leistung am Lastwiderstand}{2}{subsubsection.1.1.2}%
+\contentsline {subsubsection}{\numberline {1.1.3}Relative Leistung}{3}{subsubsection.1.1.3}%
+\contentsline {subsubsection}{\numberline {1.1.4}Relative Spannung}{4}{subsubsection.1.1.4}%
+\contentsline {subsection}{\numberline {1.2}Reale Stromquelle mit Lastwiderstand}{6}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1}Leistung am Lastwiderstand}{6}{subsubsection.1.2.1}%
+\contentsline {subsubsection}{\numberline {1.2.2}Maximale Leistung am Lastwiderstand}{7}{subsubsection.1.2.2}%
+\contentsline {subsubsection}{\numberline {1.2.3}Relative Leistung}{8}{subsubsection.1.2.3}%
+\contentsline {subsubsection}{\numberline {1.2.4}Relativer Strom}{9}{subsubsection.1.2.4}%
+\contentsline {section}{\numberline {2}Problem 2 – Zerlegung einer Funktion}{12}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Unterschied gerade und ungerade Funktionen}{12}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Allgemeine Zerlegung Funktion}{12}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Grafische Analyse}{13}{subsection.2.3}%
+\contentsline {section}{\nonumberline Abbildungsverzeichnis}{16}{section*.11}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

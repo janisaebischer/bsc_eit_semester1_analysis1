@@ -1,0 +1,41 @@
+
+\noindent
+Zur weiteren Analyse der Leistungsübertragung wird auch bei der realen Stromquelle
+die Leistung normiert dargestellt. Dadurch lassen sich die Ergebnisse unabhängig von
+den konkreten Werten des Quellstroms und des Innenleitwerts verallgemeinern. Die
+relative Leistung wird definiert als:
+\begin{equation}
+p = \frac{P}{P_0}
+\end{equation}
+
+\noindent
+Als dimensionslose Größe wird erneut das Verhältnis zwischen Lastleitwert und Innen-
+leitwert eingeführt:
+\begin{equation}
+r = \frac{G_L}{G_I}
+\end{equation}
+
+\noindent
+Durch Einsetzen der Leistungsfunktion $P(G_L)$ aus Gleichung~\eqref{eq:PL_GL} sowie
+der maximalen Leistung $P_0$ aus Gleichung~\eqref{eq:P0_stromquelle} in die Definition
+der relativen Leistung ergibt sich:
+\begin{equation}
+p(r) = \frac{4r}{(1+r)^2}
+\end{equation}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{2_2_3_p_r_stromquelle.png}
+    \caption{Leistung im Verhältnis der Widerstände (Stromquelle)}
+    \label{fig:Leistung im Verhältnis der Widerstände (Stromquelle)}
+\end{figure}
+\noindent
+Die relative Leistung besitzt ihr Maximum bei $r = 1$, was der Bedingung
+$G_L = G_I$ entspricht. Damit wird erneut bestätigt, dass die maximale Leistungs-
+übertragung bei Leistungsanpassung auftritt.
+
+\noindent
+Für sehr kleine Lastleitwerte ($r \ll 1$) sowie für sehr große Lastleitwerte
+($r \gg 1$) geht die relative Leistung gegen null. Die Darstellung der relativen
+Leistung erfolgt mit logarithmischer Skalierung der $r$-Achse, wodurch das Verhalten
+der Leistung über mehrere Größenordnungen des Lastleitwerts übersichtlich dargestellt
+werden kann.

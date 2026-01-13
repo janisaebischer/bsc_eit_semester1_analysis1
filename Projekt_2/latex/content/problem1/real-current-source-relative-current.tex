@@ -1,0 +1,63 @@
+
+\noindent
+Zur Analyse des Spannungsverhaltens der realen Stromquelle wird die am Lastwiderstand
+anliegende Spannung normiert dargestellt. Die relative Spannung wird definiert als:
+\begin{equation}
+u = \frac{U}{U_0}
+\end{equation}
+
+\noindent
+Die Spannung am Lastwiderstand ergibt sich aus dem Zusammenhang zwischen Strom
+und Leitwert:
+\begin{equation}
+U = \frac{I}{G_L}
+\end{equation}
+
+\noindent
+Mit dem Strom durch den Lastleitwert
+\begin{equation}
+I = I_0 \frac{G_L}{G_L + G_I}
+\end{equation}
+ergibt sich für die Spannung:
+\begin{equation}
+U = \frac{I_0}{G_L + G_I}
+\end{equation}
+
+\noindent
+Als Referenzspannung wird die Leerlaufspannung der Stromquelle $U_0$ verwendet.
+Diese ergibt sich für $G_L \rightarrow 0$ zu:
+\begin{equation}
+U_0 = \frac{I_0}{G_I}
+\end{equation}
+
+\noindent
+Durch Einsetzen der Ausdrücke für $U$ und $U_0$ in die Definition der relativen
+Spannung ergibt sich:
+\begin{equation}
+u = \frac{G_I}{G_L + G_I}
+\end{equation}
+
+\noindent
+Zur normierten Darstellung wird erneut das Verhältnis zwischen Lastleitwert und
+Innenleitwert eingeführt:
+\begin{equation}
+r = \frac{G_L}{G_I}
+\end{equation}
+
+\noindent
+Damit ergibt sich für die relative Spannung die folgende Abhängigkeit vom Leitwert-
+verhältnis:
+\begin{equation}
+u(r) = \frac{1}{1 + r}
+\end{equation}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{2_2_4_u_r_stromquelle.png}
+    \caption{Strom im Verhältnis der Widerstände (Stromquelle)}
+    \label{fig:Strom im Verhaeltnis der Widerstaende (Stromquelle)}
+\end{figure}
+
+\noindent
+Die relative Spannung nimmt mit zunehmendem Lastleitwert monoton ab. Für sehr
+kleine Lastleitwerte ($r \ll 1$) nähert sich die relative Spannung dem Wert eins, wäh-
+rend sie für große Lastleitwerte ($r \gg 1$) gegen null strebt.

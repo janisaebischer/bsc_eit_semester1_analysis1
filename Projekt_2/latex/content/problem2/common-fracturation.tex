@@ -1,0 +1,69 @@
+
+\noindent
+Wir betrachten im Folgenden die Funktion
+\begin{equation}
+\label{eq:f_definition}
+f(x) = \cos(2x^3 + 1)\,e^{x-1}
+\end{equation}
+
+\noindent
+Eine Funktion $f$ lässt sich allgemein als Summe zweier Teilfunktionen $g$ und $h$
+schreiben:
+\begin{equation}
+\label{eq:f_zerlegung}
+f(x) = g(x) + h(x)
+\end{equation}
+
+\noindent
+Dabei bezeichnet $g(x)$ den geraden Anteil und $h(x)$ den ungeraden Anteil der
+Funktion. Diese Anteile sind definiert durch:
+\begin{equation}
+\label{eq:g_definition}
+g(x) = \frac{f(x) + f(-x)}{2}
+\end{equation}
+\begin{equation}
+\label{eq:h_definition}
+h(x) = \frac{f(x) - f(-x)}{2}
+\end{equation}
+
+\noindent
+Zur Anwendung dieser Zerlegung auf die gegebene Funktion wird zunächst $f(-x)$
+bestimmt. Durch Einsetzen von $-x$ in Gleichung~\eqref{eq:f_definition} ergibt sich:
+\begin{equation}
+\label{eq:f_minus_x}
+f(-x) = \cos(-2x^3 + 1)\,e^{-x-1}
+\end{equation}
+
+\noindent
+Setzt man die Ausdrücke für $f(x)$ und $f(-x)$ in die Definition des geraden Anteils
+nach Gleichung~\eqref{eq:g_definition} ein, erhält man:
+\begin{equation}
+\label{eq:g_result}
+g(x) = \frac{1}{2}\left(\cos(2x^3+1)\,e^{x-1} + \cos(-2x^3+1)\,e^{-x-1}\right)
+\end{equation}
+
+\noindent
+Durch Ausklammern von $e^{-1}$ kann der gerade Anteil äquivalent geschrieben werden
+als:
+\begin{equation}
+\label{eq:g_result_factored}
+g(x) = \frac{e^{-1}}{2}\left(\cos(2x^3+1)\,e^{x} + \cos(-2x^3+1)\,e^{-x}\right)
+\end{equation}
+
+\noindent
+Analog ergibt sich für den ungeraden Anteil durch Einsetzen in Gleichung~\eqref{eq:h_definition}:
+\begin{equation}
+\label{eq:h_result}
+h(x) = \frac{1}{2}\left(\cos(2x^3+1)\,e^{x-1} - \cos(-2x^3+1)\,e^{-x-1}\right)
+\end{equation}
+
+\noindent
+Auch hier kann $e^{-1}$ ausgeklammert werden, sodass folgt:
+\begin{equation}
+\label{eq:h_result_factored}
+h(x) = \frac{e^{-1}}{2}\left(\cos(2x^3+1)\,e^{x} - \cos(-2x^3+1)\,e^{-x}\right)
+\end{equation}
+
+\noindent
+Damit ist die Funktion $f(x)$ eindeutig in einen geraden Anteil $g(x)$ und einen
+ungeraden Anteil $h(x)$ zerlegt.

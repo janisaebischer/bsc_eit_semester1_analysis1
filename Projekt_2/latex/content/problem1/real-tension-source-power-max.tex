@@ -1,0 +1,69 @@
+
+\noindent
+Zur Bestimmung der maximalen Leistung wird die Abhängigkeit der Lastleistung vom Lastwiderstand untersucht. 
+Ausgangspunkt ist die Gleichung~\ref{eq:Leistung_Last_Spannungsquelle}.
+
+\noindent
+Um das Maximum der Leistung zu bestimmen, wird die erste Ableitung der Leistung nach dem Lastwiderstand $R_L$ gebildet:
+\begin{equation}
+\label{eq:dPL_dRL}
+P_L'(R_L)
+= U_0^2 \frac{(R_I + R_L)^2 - 2R_L(R_I + R_L)}{(R_I + R_L)^4}
+\end{equation}
+
+\noindent
+Der Zähler kann vereinfacht werden zu:
+\begin{equation}
+\label{eq:dPL_dRL_simpl}
+P_L'(R_L)
+= U_0^2 \frac{R_I - R_L}{(R_I + R_L)^3}
+\end{equation}
+
+\noindent
+Das Maximum der Leistung liegt an der Stelle, an der die Ableitung gleich null ist. Da der Nenner der Ableitung stets positiv ist, bestimmt allein der Zähler die Nullstelle:
+\begin{equation}
+\label{eq:nullstelle_zaehler}
+R_I - R_L = 0
+\end{equation}
+
+\noindent
+Daraus folgt unmittelbar:
+\begin{equation}
+\label{eq:RL_eq_RI}
+R_L = R_I
+\end{equation}
+
+\noindent
+Zur Absicherung, dass es sich hierbei tatsächlich um ein Maximum handelt, kann das Vorzeichen der Ableitung betrachtet werden. Für $R_L < R_I$ ist die Ableitung positiv, während sie für $R_L > R_I$ negativ ist. Die Leistung besitzt daher an dieser Stelle ein eindeutiges Maximum.
+
+\noindent
+Zur Klassifikation der Extremstelle wird zusätzlich die zweite Ableitung der Leistung $P_L(R_L)$ nach dem Lastwiderstand betrachtet:
+\begin{equation}
+\label{eq:d2PL_dRL2}
+P_L''(R_L)
+= -\frac{2U_0^2}{(R_I + R_L)^3}
+\end{equation}
+
+\noindent
+Da der Nenner für $R_I + R_L > 0$ positiv ist, ist die zweite Ableitung negativ. Insbesondere gilt an der Stelle $R_L = R_I$:
+\begin{equation}
+\label{eq:d2PL_negative_at_max}
+P_L''(R_L) < 0
+\end{equation}
+
+\noindent
+Damit handelt es sich bei der zuvor bestimmten Extremstelle eindeutig um ein Maximum der Leistung.
+
+\noindent
+Durch Einsetzen der Bedingung $R_L = R_I$ in die Gleichung~\ref{eq:Leistung_Last_Spannungsquelle} lässt sich eine allgemeine Formel zur Berechnung der maximalen Leistung herleiten:
+\begin{equation}
+\label{eq:P0}
+P_0 = \frac{U_0^2}{4R_I}
+\end{equation}
+
+\noindent
+Setzt man die gegebenen Werte $U_0 = 15\,\mathrm{V}$ und $R_I = 5\,\Omega$ ein, ergibt sich für die maximale Leistung der Spannungsquelle:
+\begin{equation*}
+\label{eq:P0_numeric}
+P_0 = \frac{(15\,\mathrm{V})^2}{4 \cdot 5\,\Omega} = 11.25\,\mathrm{W}
+\end{equation*}

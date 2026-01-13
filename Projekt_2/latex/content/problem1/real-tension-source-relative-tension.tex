@@ -1,0 +1,41 @@
+
+Zur weiteren Analyse der Schaltung wird zusätzlich die am Lastwiderstand anliegende
+Spannung normiert dargestellt. Dadurch lässt sich der Spannungsverlauf unabhängig
+von der absoluten Höhe der Quellenspannung untersuchen. Die relative Spannung wird
+definiert als:
+\begin{equation}
+u = \frac{U}{U_0}
+\end{equation}
+
+\noindent
+Die am Lastwiderstand anliegende Spannung $U$ ist durch den Spannungsteiler aus
+Gleichung (2) gegeben. Durch Einsetzen dieser Beziehung in die Definition der rela-
+tiven Spannung ergibt sich:
+\begin{equation}
+u = \frac{R_L}{R_I + R_L}
+\end{equation}
+
+\noindent
+Zur Darstellung in normierter Form wird erneut das Widerstandsverhältnis
+\begin{equation}
+r = \frac{R_L}{R_I}
+\end{equation}
+verwendet. Damit ergibt sich für die relative Spannung die folgende Abhängigkeit vom
+Widerstandsverhältnis:
+\begin{equation}
+u(r) = \frac{r}{1 + r}
+\end{equation}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{2_1_4_u_r_spannungsquelle.png}
+    \caption{Spannung im Verhältnis der Widerstände (Spannungsquelle)}
+    \label{fig:Spannung im Verhaeltnis der Widerstaende (Spannungsquelle)}
+\end{figure}
+
+\noindent
+Die relative Spannung nimmt mit wachsendem Lastwiderstand monoton zu. Für sehr
+kleine Lastwiderstände ($r \ll 1$) geht die relative Spannung gegen null, während sie
+für große Lastwiderstände ($r \gg 1$) gegen eins strebt. Die Darstellung erfolgt mit
+logarithmischer Skalierung der $r$-Achse, wodurch der Spannungsverlauf über mehrere
+Größenordnungen anschaulich dargestellt werden kann.

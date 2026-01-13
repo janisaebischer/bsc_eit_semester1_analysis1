@@ -1,0 +1,68 @@
+
+\noindent
+Zur Bestimmung der maximalen Leistung wird die Abhängigkeit der im Lastwiderstand
+umgesetzten Leistung vom Lastleitwert $G_L$ untersucht. Ausgangspunkt ist die in
+Abschnitt 2.2.1 hergeleitete Leistungsfunktion:
+\begin{equation}
+\label{eq:PL_GL}
+P(G_L) = I_0^2 \frac{G_L}{(G_L + G_I)^2}
+\end{equation}
+
+\noindent
+Um das Maximum der Leistung zu bestimmen, wird die erste Ableitung der Leistung
+nach dem Lastleitwert $G_L$ gebildet:
+\begin{equation}
+\label{eq:dP_dGL}
+P'(G_L) = I_0^2 \frac{(G_L + G_I)^2 - 2G_L(G_L + G_I)}{(G_L + G_I)^4}
+\end{equation}
+
+\noindent
+Der Zähler kann vereinfacht werden zu:
+\begin{equation}
+\label{eq:dP_dGL_simpl}
+P'(G_L) = I_0^2 \frac{G_I - G_L}{(G_L + G_I)^3}
+\end{equation}
+
+\noindent
+Das Maximum der Leistung liegt an der Stelle, an der die Ableitung gleich null ist.
+Da der Nenner der Ableitung stets positiv ist, bestimmt allein der Zähler die Lage der
+Extremstelle:
+\begin{equation}
+\label{eq:nullstelle_GL}
+G_I - G_L = 0
+\end{equation}
+
+\noindent
+Daraus folgt unmittelbar:
+\begin{equation}
+\label{eq:GL_eq_GI}
+G_L = G_I
+\end{equation}
+
+\noindent
+Zur Klassifikation der Extremstelle wird zusätzlich die zweite Ableitung der Leistung
+nach dem Lastleitwert betrachtet:
+\begin{equation}
+\label{eq:d2P_dGL2}
+P''(G_L) = -\frac{2I_0^2}{(G_L + G_I)^3}
+\end{equation}
+
+\noindent
+Da der Nenner für $G_L + G_I > 0$ stets positiv ist, ist die zweite Ableitung negativ.
+Somit handelt es sich bei der Extremstelle eindeutig um ein Maximum der Leistung.
+
+\noindent
+Durch Einsetzen der Bedingung $G_L = G_I$ in Gleichung \eqref{eq:PL_GL} ergibt sich
+die maximale Leistung der Stromquelle:
+\begin{equation}
+\label{eq:P0_stromquelle}
+P_0 = \frac{I_0^2}{4G_I}
+\end{equation}
+
+\noindent
+Mit der Beziehung $G_I = \frac{1}{R_I}$ kann die maximale Leistung auch in Abhän-
+gigkeit des Innenwiderstands angegeben werden:
+\begin{equation}
+\label{eq:P0_stromquelle_R}
+P_0 = \frac{I_0^2 R_I}{4}
+\end{equation}

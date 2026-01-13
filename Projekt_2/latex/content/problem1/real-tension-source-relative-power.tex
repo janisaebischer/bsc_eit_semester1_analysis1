@@ -1,0 +1,33 @@
+
+
+Zur weiteren Analyse der Leistungsübertragung wird die Leistung normiert dargestellt. Dadurch können die Ergebnisse unabhängig von den konkreten Werten der Spannungsquelle und des Innenwiderstands betrachtet werden. Die relative Leistung wird definiert als:
+\begin{equation}
+\label{eq:relative_leistung_definition}
+p = \frac{P_L}{P_0}
+\end{equation}
+
+\noindent
+Zur Vereinfachung der Darstellung wird zusätzlich das dimensionslose Widerstandsverhältnis eingeführt:
+\begin{equation}
+\label{eq:r_definition}
+r = \frac{R_L}{R_I}
+\end{equation}
+
+\noindent
+Durch Einsetzen der Leistungsfunktion $P_L(R_L)$ aus Gleichung~\ref{eq:Leistung_Last_Spannungsquelle} sowie der maximalen Leistung $P_0$ aus Gleichung \eqref{eq:P0} in Gleichung \eqref{eq:relative_leistung_definition} ergibt sich für die relative Leistung die folgende Abhängigkeit vom Widerstandsverhältnis:
+\begin{equation}
+\label{eq:relative_leistung_r}
+p(r) = \frac{4r}{(1+r)^2}
+\end{equation}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{2_1_3_p_r_spannungsquelle.png}
+    \caption{Leistung im Verhältnis der Widerstände (Spannungsquelle)}
+    \label{fig:Leistung im Verhaeltnis der Widerstaende (Spannungsquelle)}
+\end{figure}
+
+\noindent
+Die relative Leistung besitzt ihr Maximum bei $r = 1$, was der Bedingung $R_L = R_I$ entspricht. Für sehr kleine Lastwiderstände ($r \ll 1$) sowie für sehr große Lastwiderstände ($r \gg 1$) geht die relative Leistung gegen null.
+
+\noindent
+Die Darstellung der relativen Leistung erfolgt mit logarithmischer Skalierung der $r$-Achse. Dadurch kann das Verhalten der Leistung über mehrere Größenordnungen des Lastwiderstands übersichtlich dargestellt werden.
